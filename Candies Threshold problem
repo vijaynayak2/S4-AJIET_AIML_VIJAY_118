@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter total number of candies (N): ");
+        int N = sc.nextInt();
+        System.out.print("Enter minimum candies (K): ");
+        int K = sc.nextInt();
+        int jar = N;
+        while (true) {
+            System.out.print("Enter candies to purchase: ");
+            int req = sc.nextInt();
+            if (req > jar){
+                System.out.println("INVALID INPUT");
+                continue;
+            }
+            jar -= req;
+            System.out.println("Number of Candies Sold: " + req);
+            System.out.println("Number of Candies available: " + jar);
+            if (jar <= K) jar = N;
+        }
+    }
+}
