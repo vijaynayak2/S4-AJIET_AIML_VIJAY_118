@@ -1,0 +1,8 @@
+class Main {
+    public static void main(String[] args) {
+       int a=2,b=3,temp =a;
+          a=b;
+         b=temp;
+        System.out.print("value of a is " + a + " value of b is " + b);
+    }
+}
