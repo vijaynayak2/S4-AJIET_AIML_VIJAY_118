@@ -1,0 +1,27 @@
+//Array List
+import java.util.ArrayList;
+ class Main{
+     public static void main(String []args) {
+         ArrayList  <String> country = new ArrayList < > ();
+         country.add("India\n");
+         country.add("Newzeland\n");
+         country.add("Srilanka");
+         country.add(0,"Vijay");
+          System.out.println(country);
+     }
+ }
+
+// Linked list
+import java.util.LinkedList;
+import java.util.Collections;
+ class Main{
+     public static void main(String []args) {
+         LinkedList  <Integer> country = new LinkedList < > ();
+         country.add(12);
+         country.add(45);
+         country.add(95);
+         country.add(7);
+          Collections.sort(country,Collections.reverseOrder());
+          System.out.println(country);
+     }
+ }
