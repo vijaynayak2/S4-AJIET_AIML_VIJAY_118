@@ -1,0 +1,23 @@
+import java.util.HashMap;
+ class Main{
+     public static void main(String []args) {
+         
+      HashMap <Character,Integer> k = new HashMap< >();
+       String S="collegellll";
+        for (char C:S.toCharArray())
+        {
+            if (k.containsKey(C))
+            {
+                k.put(C,k.get(C)+1);
+            }
+            else {
+                k.put(C,1);
+            }
+        }
+        for(char y:k.keySet())
+        {
+            if(k.get(y)>1)
+            System.out.println("The duplicate values are : " +k.get(y));
+        }
+     }
+ }
