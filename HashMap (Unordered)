@@ -1,0 +1,22 @@
+import java.util.HashMap;
+ class Main{
+     public static void main(String []args) {
+        HashMap <Integer,String> AI = new HashMap< >();
+        AI.put(4,"ADA");
+        AI.put(5,"DBMS");
+        AI.put(101,"BIO");
+        AI.put(121,"DMS");
+        System.out.println(AI);
+        
+        System.out.println(AI.get(101)); 
+        
+        System.out.println(AI.containsKey("MERN"));
+        
+        System.out.println(AI.size());
+        
+        System.out.println(AI.remove(5));
+        
+        System.out.println(AI);
+
+     }
+ }
