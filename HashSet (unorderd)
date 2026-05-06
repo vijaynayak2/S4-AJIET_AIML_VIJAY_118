@@ -1,0 +1,13 @@
+import java.util.HashSet;
+ class Main{
+     public static void main(String []args) {
+         HashSet  <String> country = new HashSet < > ();
+         country.add("India");
+         country.add("Newzeland");
+         country.add("Srilanka");
+         country.add("Vijay");
+          System.out.println(country);
+           System.out.println(country.size());
+           System.out.println(country.contains("Srilanka"));
+     }
+ }
