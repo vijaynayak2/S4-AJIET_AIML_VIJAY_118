@@ -16,7 +16,6 @@ import java.util.HashMap;
         
         System.out.println(AI.keySet());
 
-        
         System.out.println(AI.remove(5));
         
         System.out.println(AI);
