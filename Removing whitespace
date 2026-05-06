@@ -1,0 +1,19 @@
+
+public class Main { 
+    public static void main(String[] args) {
+        String s = "Hello World";
+        String o = s.replace(" ", ""); 
+        System.out.println("Result 1: " + o);
+
+        String input = "Hello World Java";
+        StringBuilder k = new StringBuilder();
+        
+        for (char j : input.toCharArray()) {
+            if (!Character.isWhitespace(j)) { 
+                k.append(j);
+            }
+        }
+        
+      System.out.println("Result 2: " + k);
+    }
+}
