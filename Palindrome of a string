@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
+
+        String reversed = getReversed(input);
+        boolean isPalindrome = checkPalindrome(input);
+
+        System.out.println("Input:         \"" + input + "\"");
+        System.out.println("Reversed:      \"" + reversed + "\"");
+        System.out.println("Is a Palindrome: " + isPalindrome);
+
+        sc.close();
+    }
+
+    public static String getReversed(String s) {
+        String cleaned = s.toLowerCase().replaceAll("\\s+", "");
+        return new StringBuilder(cleaned).reverse().toString();
+    }
+
+    public static boolean checkPalindrome(String s) {
+        String cleaned = s.toLowerCase().replaceAll("\\s+", "");
+        String reversed = new StringBuilder(cleaned).reverse().toString();
+        return cleaned.equals(reversed);
+    }
+}
