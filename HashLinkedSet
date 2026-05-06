@@ -1,0 +1,13 @@
+import java.util.LinkedHashSet;
+ class Main{
+     public static void main(String []args) {
+        LinkedHashSet <String> AI = new LinkedHashSet< >();
+        AI.add("ADA");
+        AI.add("DBMS");
+        AI.add("BIO");
+        AI.add("DMS");
+                System.out.println(AI);
+        System.out.println(AI.contains("MERN"));
+        System.out.println(AI.size());
+     }
+ }
