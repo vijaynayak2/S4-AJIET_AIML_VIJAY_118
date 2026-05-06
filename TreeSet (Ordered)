@@ -1,0 +1,12 @@
+import java.util.TreeSet;
+ class Main{
+     public static void main(String []args) {
+        TreeSet <String> AI = new TreeSet< >();
+        AI.add("ADA");
+        AI.add("DBMS");
+        AI.add("DMS");
+        System.out.println(AI);
+        System.out.println(AI.contains("MERN"));
+        System.out.println(AI.size());
+     }
+ }
